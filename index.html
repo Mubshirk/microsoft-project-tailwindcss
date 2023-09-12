@@ -14,7 +14,8 @@
       <div class="flex items-center justify-between  md:order-3">
         <div class="relative lg:inline-flex rounded-xl">
 
-          <div x-data="{ show : false }" @click.away=" show = false  ">
+          <div x-data="{ show : false }" @click.away=" show = false  "
+          class="md:hidden">
               <button
                   @click="show = ! show"
                   class="py-1 pl-3 pr-3 text-sm font-semibold text-left flex flex-col hamburger">
@@ -100,7 +101,7 @@
         </ul>
 
         <!-- hamburger stuff  -->
-        <ul class="features flex flex-col justify-between space-x-2 absolute left-8 bg-cyan-300 p-4 hidden">
+        <ul class="features flex-col justify-between space-x-2 absolute left-8 bg-cyan-300 p-4 hidden">
           <li>Microsoft 365</li>
           <li>Office</li>
           <li>Window</li>
